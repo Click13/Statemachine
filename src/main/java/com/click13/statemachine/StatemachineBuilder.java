@@ -3,9 +3,7 @@ package com.click13.statemachine;
 import com.click13.statemachine.exception.StatemachineException;
 import com.click13.statemachine.rules.Ruleprocessor;
 import lombok.NonNull;
-import lombok.Setter;
 
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 

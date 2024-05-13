@@ -2,7 +2,7 @@ package com.click13.statemachine;
 
 import lombok.Getter;
 
-public class Transition {
+public final class Transition {
 
     @Getter
     private State startstate;
