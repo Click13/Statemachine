@@ -50,4 +50,27 @@ public class StateTest {
         Assertions.assertTrue(s.hashCode() == s.hashCode());
     }
 
+    @Test
+    public void ConstructorTest01(){
+        State s = new State("A");
+
+        Assertions.assertFalse(s.isEndState());
+        Assertions.assertEquals("A", s.getName());
+    }
+
+    @Test
+    public void ConstructorTest02(){
+        State s = new State("A", false);
+
+        Assertions.assertFalse(s.isEndState());
+        Assertions.assertEquals("A", s.getName());
+    }
+
+    @Test
+    public void ConstructorTest03(){
+        State s = new State("A", true);
+
+        Assertions.assertTrue(s.isEndState());
+        Assertions.assertEquals("A", s.getName());
+    }
 }
